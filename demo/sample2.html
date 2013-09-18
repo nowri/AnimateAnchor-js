@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>SmoothAnchor2 | sample2</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body id="top">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="wrapper">
+	<div class="container">
+		<h1>animAnchorTopByNumber</h1>
+		<p>scrollTopを数値で指定しアニメーション</p>
+		<nav id="anchorList">
+			<ul>
+				<li><a href="#" onclick="return false;">#（クリックイベントから除外される）</a></li>
+				<li><a href="#to0">(1000, "easeInOutSine", "a[href^='#to0']", 0)</a></li>
+				<li><a href="#to100">(1000, "easeInOutSine", "a[href^='#to100']", 100)</a></li>
+				<li><a href="#to200">(1000, "easeInOutSine", "a[href^='#to200']", 200)</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<div style="position:absolute;top:100px;right:5%;font-size:18px;font-style: italic;;">TOP : 100</div>
+<div style="position:absolute;top:200px;right:5%;font-size:18px;font-style: italic;">TOP : 200</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="AnimateAnchor.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+	$(function(){
+		AnimateAnchor.animAnchorTopByNumber(1000, "easeInOutSine", "a[href^='#to0']", 0);
+		AnimateAnchor.animAnchorTopByNumber(1000, "easeInOutSine", "a[href^='#to100']", 100);
+		AnimateAnchor.animAnchorTopByNumber(1000, "easeInOutSine", "a[href^='#to200']", 200);
+	});
+
+</script>
+</body>
+</html>
