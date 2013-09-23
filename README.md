@@ -2,5 +2,13 @@
 AnimateAnchor.js
 ================
 
+About
+----
 
-[See demo](http://nowri.github.com/AnimateAnchor-js/demo/)
+AnimateAnchor.jsを読み込むと自動的にアンカーリンクがアニメーションするようになります。要jQuery。
+
+
+Detail
+--------
+
+[See](http://nowri.github.io/AnimateAnchor-js/demo/)
